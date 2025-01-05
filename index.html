@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header>
+        <h1>Portfolio</h1>
+        <!-- Burger Menu Icon -->
+        <img src="img/burger_icon.svg" alt="Burger Menu" class="burger_menu" id="burgerMenu">
+
+        <div id="popupMenu" class="popup-menu">
+            <button class="close-btn">&times;</button>
+            <a href="">Forside</a>
+            <a href="index.html">Indhold</a>
+            <a href="#">Om mig</a>
+            <a href="aktivitetskalender.html">Kontakt</a>
+         
+        </div>
+</header>
+
+<section class="hero">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <h1>My Laub</h1>
+</section>
+
+<section>
+    <div class="indhold">
+        <h2>Indhold</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi inventore nostrum ab voluptate temporibus laboriosam obcaecati dolore veniam natus ipsum, dolorem aliquam doloribus sint harum magni iure, non quis, ex consequatur! Cumque, ipsa dolore nesciunt molestiae perspiciatis iure delectus ullam.</p>
+    </div>
+</section>
+
+<section class="tal-section">
+    <div class="tal-item">
+      <h1>1</h1>
+      <p>Intro</p>
+    </div>
+    <div class="tal-item">
+      <h1>2</h1>
+      <p>Web</p>
+    </div>
+    <div class="tal-item">
+      <h1>3</h1>
+      <p>UX / UI</p>
+    </div>
+    <div class="tal-item">
+      <h1>4</h1>
+      <p>Animation</p>
+    </div>
+    <div class="tal-item">
+      <h1>5</h1>
+      <p>Indhold</p>
+    </div>
+    <div class="tal-item">
+      <h1>6</h1>
+      <p>Portfolio</p>
+    </div>
+  </section>
+
+<section class="om_mig">
+    <h2>Om mig</h2>
+    <div class="portraet">
+        <img src="img/portraet.webp" alt="portræt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia itaque omnis, sed blanditiis sapiente ea animi nesciunt nisi harum architecto mollitia consequuntur officiis voluptatum, ad voluptatibus debitis reiciendis dolores in sit placeat aperiam exercitationem fuga! Voluptates, quaerat. Dicta, blanditiis?</p>
+    </div>
+    <a href="#" class="knap">Om mig</a>
+    
+   
+</section>
+
+<footer>
+    <div class="sociale_links">
+        <a href=""><img src="img/mail_icon.svg" alt=""></a>
+     <a href="https://www.instagram.com/mylaub/"><img src="img/instagram_icon.svg" alt=""></a>
+        <a href="https://dk.linkedin.com/in/my-laub-b43994232"><img src="img/linkenin_icon.svg" alt=""></a>
+        
+    </div>
+    <p>Copyright My Laub</p>
+    
+</footer>
+    
+
+<script>
+    document.getElementById('popupMenu').style.display = 'none';
+  
+  document.getElementById('burgerMenu').onclick = function() {
+      var popupMenu = document.getElementById('popupMenu');
+      
+      // Toggle the menu visibility on burger click
+      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
+          popupMenu.style.display = 'flex'; // Show the menu
+      } else {
+          popupMenu.style.display = 'none'; // Hide the menu
+      }
+  };
+  
+  // Close the popup menu when the close button is clicked
+  document.querySelector('.close-btn').onclick = function() {
+      document.getElementById('popupMenu').style.display = 'none';
+  };
+  
+  // Optional: Close the menu if clicked outside
+  window.onclick = function(event) {
+      var popupMenu = document.getElementById('popupMenu');
+      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
+          if (popupMenu.style.display === 'flex') {
+              popupMenu.style.display = 'none'; // Close the menu if open
+          }
+      }
+  };
+  </script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+body {
+  background-color: var(--hvid);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+  --hvid: #f9f7f5;
+  --gul: #ccb363;
+  --blaa: #6f7d7b;
+  --copper: #c27e35;
+  --roed: #76290b;
+  --groen: #1e3226;
+}
+
+@font-face {
+  font-family: "Genera";
+  src: url("fonts/Genera.woff2") format("woff2"), url("fonts/Genera.woff") format("woff"), url("fonts/Genera.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tan-pearl";
+  src: url("fonts/tan-pearl.woff2") format("woff2"), url("fonts/tan-pearl.woff") format("woff"), url("fonts/tan-pearl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* HEADER */
+header h1 {
+  font-family: "genera";
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  padding: 4% 0%;
+  gap: 100px;
+  width: 100%;
+  background: var(--hvid);
+  /* z-index: 2; */
+  border-bottom: 1px solid black;
+}
+header img {
+  align-items: right;
+}
+
+.burger_menu {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.popup-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hvid);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.popup-menu a {
+  font-family: "Genera", sans-serif;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  margin: 20px 0;
+  margin-top: 60px;
+  text-align: right;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popup-menu a:hover {
+  color: var(--copper);
+}
+
+/*  (X) knap */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  font-weight: 100;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--roed);
+  z-index: 1100;
+}
+/* HEADER */
+
+/* Generel CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding-top: 200px;
+}
+
+main {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  background-image: url("img/stregtegning.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: fixed;
+}
+
+section {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.hero h1 {
+  font-family: "tan-pearl";
+  font-size: 3rem;
+  text-align: right;
+  color: var(--groen);
+}
+
+p {
+  font-family: "genera";
+  color: black;
+}
+
+h2 {
+  font-family: "genera";
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Genera";
+}
+
+/* Generel CSS */
+
+/* Indhold */
+
+.indhold {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tal-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.tal-item h1 {
+  font-family: "tan-pearl", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+.tal-item p {
+  font-family: "Genera", sans-serif;
+  color: black;
+}
+
+.tal-item:nth-child(1) h1 {
+  color: var(--groen);
+}
+.tal-item:nth-child(2) h1 {
+  color: var(--gul);
+}
+.tal-item:nth-child(3) h1 {
+  color: var(--roed);
+}
+.tal-item:nth-child(4) h1 {
+  color: var(--copper);
+}
+.tal-item:nth-child(5) h1 {
+  color: var(--blaa);
+}
+.tal-item:nth-child(6) h1 {
+  color: var(--groen);
+}
+
+/* Indhold */
+
+/* Om mig */
+
+.om_mig {
+  text-align: center;
+  margin-top: 50px;
+}
+.portraet {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.portraet img {
+  width: 100%;
+}
+
+.knap {
+  display: inline-block;
+  font-family: "tan-pearl", sans-serif;
+  font-size: 0.7rem;
+  color: var(--blaa);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid var(--roed);
+  background-color: var(--hvid);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.knap:hover {
+  background-color: var(--roed);
+  color: var(--hvid);
+}
+
+/* Om mig */
+
+/* Footer */
+
+footer {
+  background-color: var(--hvid);
+  padding: 20px 0;
+  border-top: 1px solid black;
+}
+
+.sociale_links {
+  display: flex; /* Arranger ikonerne horisontalt */
+  gap: 20px; /* Afstand mellem ikonerne */
+  justify-content: center; /* Centrer ikonerne */
+}
+.sociale_links img {
+  display: flex; /* Placér ikonerne ved siden af hinanden */
+  gap: 15px; /* Afstand mellem ikonerne */
+}
+footer p {
+  font-family: "Genera", sans-serif; /* Skrifttype */
+  font-size: 1rem; /* Tekststørrelse */
+  color: var(--blaa); /* Tekstfarve */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Footer */
+
+/* ******************************** */
+/* ***************   OM MIG   ***************** */
+.intro {
+  padding-top: 88px;
+}
+.intro h1 {
+  font-family: "tan-pearl";
+  font-size: 2.7rem;
+  text-align: center;
+  color: var(--roed);
+}
+
+.info_billede {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.info_hoejre {
+  text-align: right;
+  font-size: 0.7rem;
+}
+.info_venstre {
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.info_billede img {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.erfaring {
+  /* padding: 20px; */
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.aarstal p {
+  font-size: 0.7rem;
+}
+
+.frivillig_uddannelse {
+  padding-top: 20px;
+  text-align: center;
+  /* padding: 15px; */
+  padding-bottom: 30px;
+}
+
+.frivillig_uddannelse h2 {
+  font-family: "tan-pearl";
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.frivillig h2 {
+  color: var(--blaa);
+}
+
+.uddannelse h2 {
+  color: var(--gul);
+  margin-top: 20px;
+}
+
+.frivillig_uddannelse h3 {
+  margin-top: 20px;
+}
+
+.frivillig_uddannelse p {
+  margin-top: 10px;
+}
+
+/* ***************   OM MIG   ***************** */
+
+/* ***************   INTROUGE   ***************** */
+
+.hero_tema h1 {
+  font-family: "tan-pearl";
+  font-size: 2.5rem;
+  color: var(--groen);
+  padding-bottom: 20px;
+}
+
+.hero_tema {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.buzzwords {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.buzzwords h3 {
+  font-family: "tan-pearl";
+  font-size: 1rem;
+  color: var(--blaa);
+}
+
+.buzzwords h2 {
+  padding-top: 10px;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+.process {
+  text-align: center;
+}
+.process p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.process img {
+  width: 100%;
+}
+
+.process iframe {
+  width: 100%;
+  height: auto;
+}
+
+.evaluering_grid {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.evaluering h1 {
+  font-family: "tan-pearl";
+  font-size: 2rem;
+  color: var(--blaa);
+}
+
+.evaluering svg {
+  width: 20px;
+}
+
+/* ***************   INTROUGE   ***************** */

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header>
+        <h1>Portfolio</h1>
+        <!-- Burger Menu Icon -->
+        <img src="img/burger_icon.svg" alt="Burger Menu" class="burger_menu" id="burgerMenu">
+
+        <div id="popupMenu" class="popup-menu">
+            <button class="close-btn">&times;</button>
+            <a href="">Forside</a>
+            <a href="index.html">Indhold</a>
+            <a href="#">Om mig</a>
+            <a href="aktivitetskalender.html">Kontakt</a>
+         
+        </div>
+</header>
+
+<main>
+
+<section class="intro">
+    <div>
+        <h1>My Laub</h1>
+    </div>
+
+    <div class="info_billede">
+        <div class="info_venstre">
+            <p>27 år</p>
+            <p>København</p>
+        </div>
+        <div>
+            <img src="img/portraet.webp" alt="portræt">
+        </div>
+        <div class="info_hoejre">
+            <p>my@invs.dk</p>
+            <p>+45 40610168</p>
+        </div>
+    </div>
+</section>
+
+<section class="erfaring">
+    <div class="aarstal">
+        <p>Maj 2022 - nu</p>
+    </div>
+    <div>
+        <h3>Selvstændig fotograf og kreativ konsulent</h3>
+        <p>Ud- og afvikling af foto-kampagner, visuel identitet og branding.</p>
+    </div>
+
+    <div class="aarstal">
+        <p>2022 - 2023</p>
+    </div>
+    <div>
+        <h3>EMS:SHAPE & EMSworks</h3>
+        <p>Sportsinstruktør</p>
+    </div>
+
+    <div class="aarstal">
+        <p>2021-2022</p>
+    </div>
+    <div>
+        <h3>Social Works</h3>
+        <p>Creative & PR specialist</p>
+    </div>
+
+    <div class="aarstal">
+        <p>2018-2019</p>
+    </div>
+    <div>
+        <h3>Gads Forlag</h3>
+        <p>Forfatter og foredragsholder</p>
+    </div>
+
+</section>
+
+<section class="frivillig_uddannelse">
+<div class="frivillig">
+    <h2>Frivillig</h2>
+
+    <div>
+        <h3>Ungdommens Røde Kors</h3>
+        <p>Psykiatrisk center Bispebjerg. Miljøterapeutiske aktiviteter for børn og unge, på døgnafsnit b103.</p>
+    </div>
+    <div>
+        <h3>Ungdommens Røde Kors</h3>
+        <P>Pigeklubben Mjølnerparken.
+        Kreativ aktivitetsgruppe for piger i alderen 7-13 år samt madgruppe for piger i alderen 16-19 år. Støttegrupper for piger i social belastet miljø.</P>
+    </div>
+</div>
+
+<div class="uddannelse">
+    <h2>Uddannelse</h2>
+
+    <div>
+        <h3>Danmarks fotografiske billedkunstskole Fatamorgana</h3>
+        <p>Kunstfotografi og billedfotografisk analyse, print og grafik.</p>
+    </div>
+    <div>
+        <h3>Voksenuddannelsescenter Frederiksberg</h3>
+        <P>Sundhedsfagpakke: Dansk A, Matematik B, Engelsk B samt Psykologi C.</P>
+    </div>
+</div>
+</section>
+
+</main>
+
+
+<footer>
+    <div class="sociale_links">
+        <a href=""><img src="img/mail_icon.svg" alt=""></a>
+     <a href="https://www.instagram.com/mylaub/"><img src="img/instagram_icon.svg" alt=""></a>
+        <a href="https://dk.linkedin.com/in/my-laub-b43994232"><img src="img/linkenin_icon.svg" alt=""></a>
+        
+    </div>
+    <p>Copyright My Laub</p>
+    
+</footer>
+    
+
+<script>
+    document.getElementById('popupMenu').style.display = 'none';
+  
+  document.getElementById('burgerMenu').onclick = function() {
+      var popupMenu = document.getElementById('popupMenu');
+      
+      // Toggle the menu visibility on burger click
+      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
+          popupMenu.style.display = 'flex'; // Show the menu
+      } else {
+          popupMenu.style.display = 'none'; // Hide the menu
+      }
+  };
+  
+  // Close the popup menu when the close button is clicked
+  document.querySelector('.close-btn').onclick = function() {
+      document.getElementById('popupMenu').style.display = 'none';
+  };
+  
+  // Optional: Close the menu if clicked outside
+  window.onclick = function(event) {
+      var popupMenu = document.getElementById('popupMenu');
+      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
+          if (popupMenu.style.display === 'flex') {
+              popupMenu.style.display = 'none'; // Close the menu if open
+          }
+      }
+  };
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header>
+        <h1>Portfolio</h1>
+        <!-- Burger Menu Icon -->
+        <img src="img/burger_icon.svg" alt="Burger Menu" class="burger_menu" id="burgerMenu">
+
+        <div id="popupMenu" class="popup-menu">
+            <button class="close-btn">&times;</button>
+            <a href="">Forside</a>
+            <a href="index.html">Indhold</a>
+            <a href="#">Om mig</a>
+            <a href="aktivitetskalender.html">Kontakt</a>
+         
+        </div>
+</header>
+
+<main>
+
+    <section class="hero_tema">
+        <h1>Introuge</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </section>
+
+    <section class="buzzwords">
+        <h3>Buzzwords:</h3>
+        <h2>Domænekøb, præsentationskort, FileZilla, introvideo, InterfaceDesign.</h2>
+    </section>
+    <section class="process">
+        <div>
+            <div>
+                <h2>Præsentationskort</h2>
+                <p>Første opgave på semesteret var at lave en kort præsentation af mig selv. Jeg valgte at gå med nogle mørke farver samt stor letter-spacing. Blev hurtigt klogere.</p>
+            </div>
+            <div>
+                <img src="img/præsentationskort.webp" alt="Præsentationskort">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/so0isi7JbRQ?si=U3c3APH5D79uQ8Md" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h2>Introvideo</h2>
+                <p>I introvideoen skulle vi tage udgangspunkt i en eksisterende introsang.. Vi valgte Sex & The City og udførte konceptet på Nørrebro hvor vi hver anbefalede et sted/butik/café. Vi hjalp hinanden med at filme og klippe. Et par af drengene lavede selv titelsangen.</p>
+            </div>
+        </div>
+    </section>
+
+    <Section class="evaluering">
+        <h1>Evaluering</h1>
+
+        <div class="evaluering_grid">
+            <div>
+                <p>En god start på uddannelsen især videoen var sjov og lidt grænseoverskridende at lave, når man ikke kender hinanden. Det gik til tider lidt langsomt med mange informationsoplæg og installering af diverse programmer. Maksimalt socialt udmattet, men nok mere selvforskyldt.</p>
+            </div>
+            <div>
+                <p>Antal stjerner:</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+                    <path d="M19.5 0L23.878 13.4742H38.0456L26.5838 21.8017L30.9618 35.2758L19.5 26.9483L8.03819 35.2758L12.4162 21.8017L0.954397 13.4742H15.122L19.5 0Z" fill="#C1AB6A"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+                        <path d="M19.5 0L23.878 13.4742H38.0456L26.5838 21.8017L30.9618 35.2758L19.5 26.9483L8.03819 35.2758L12.4162 21.8017L0.954397 13.4742H15.122L19.5 0Z" fill="#C1AB6A"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+                            <path d="M19.5 0L23.878 13.4742H38.0456L26.5838 21.8017L30.9618 35.2758L19.5 26.9483L8.03819 35.2758L12.4162 21.8017L0.954397 13.4742H15.122L19.5 0Z" fill="#C1AB6A"/>
+                            </svg>
+            </div>
+        </div>
+    </Section>
+
+
+</main>
+
+
+<footer>
+    <div class="sociale_links">
+        <a href=""><img src="img/mail_icon.svg" alt=""></a>
+     <a href="https://www.instagram.com/mylaub/"><img src="img/instagram_icon.svg" alt=""></a>
+        <a href="https://dk.linkedin.com/in/my-laub-b43994232"><img src="img/linkenin_icon.svg" alt=""></a>
+        
+    </div>
+    <p>Copyright My Laub</p>
+    
+</footer>
+    
+
+<script>
+    document.getElementById('popupMenu').style.display = 'none';
+  
+  document.getElementById('burgerMenu').onclick = function() {
+      var popupMenu = document.getElementById('popupMenu');
+      
+      // Toggle the menu visibility on burger click
+      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
+          popupMenu.style.display = 'flex'; // Show the menu
+      } else {
+          popupMenu.style.display = 'none'; // Hide the menu
+      }
+  };
+  
+  // Close the popup menu when the close button is clicked
+  document.querySelector('.close-btn').onclick = function() {
+      document.getElementById('popupMenu').style.display = 'none';
+  };
+  
+  // Optional: Close the menu if clicked outside
+  window.onclick = function(event) {
+      var popupMenu = document.getElementById('popupMenu');
+      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
+          if (popupMenu.style.display === 'flex') {
+              popupMenu.style.display = 'none'; // Close the menu if open
+          }
+      }
+  };
+  </script>
+</body>
+</html>
