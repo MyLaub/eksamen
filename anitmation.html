@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<header>
+        <h1>Portfolio</h1>
+        <!-- Burger Menu Icon -->
+        <img src="img/burger_icon.svg" alt="Burger Menu" class="burger_menu" id="burgerMenu">
+
+        <div id="popupMenu" class="popup-menu">
+            <button class="close-btn">&times;</button>
+            <a href="index.html">Forside</a>
+            <a href="">Indhold</a>
+            <a href="Ommig.html">Om mig</a>
+            <a href="aktivitetskalender.html">Kontakt</a>
+         
+        </div>
+</header>
+
+<main>
+
+    <section class="hero_tema">
+        <h1>Animation</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </section>
+
+    <section class="buzzwords">
+        <h3>Buzzwords:</h3>
+        <h2>CSS position, JavaScript, EventListener, add & remove, lyde, spildesign, Illustrator, svg’er & diagrammer.</h2>
+    </section>
+    <section class="process">
+        <div>
+            <div>
+                <h2>JavaScript</h2>
+                <p>Vi lagde hårdt ud med masser af JavaScriptøvelser. Til en start var det ren volapyk, men efterhånden begyndte det at give god mening. Jeg fik lavet alle øvelser og den lille røde boks hopppede rundt på skærmen </p>
+            </div>
+            <div>
+                <img src="img/JaveOevlser.webp" alt="Java øvelser">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Idégenerering</h2>
+                <p>Derefter kastede jeg mig ud i et stort FigJam board, hvor jeg slog mig fast på stilarten “kawaii”. Jeg fik lavet mit spildiagram og sideløbende øvede jeg mig på svampespillet. Mit eget spil fik navnet “Muffin man” og havde lækre og mugne muffins man kunne klikke på.</p>
+            </div>
+            <div>
+               <img src="img/Animation_mood.webp" alt="Idegenerering moodboard">
+            </div>
+            <div>
+                <a href="https://mylaub.dk/t04/svampespillet/spil.html" class="knap_tema">Svampespillet</a>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Illustrator</h2>
+                <p>I Illustrator brugte jeg en del tid på at designe mit spil.Da jeg var over halvvejs i processen, besluttede jeg mig for at lægge stien om og starte forfra. Mit spil endte med et kawaii udtryk og skulle gerne ligne at det var vandmalet. Jeg havde en del problemer med SVG’erne da den vandmalede effekt var delvis forudsaget af opacitet - det vil jeg klart tage med mig videre.</p>
+            </div>
+            <div>
+               <img src="img/Animation_spil.webp" alt="Mit spil">
+            </div>
+            <div>
+                <a href="https://mylaub.dk/t04/muffinman/mitspil2.html" class="knap_tema">Muffin man</a>
+            </div>
+        </div>
+
+    </section>
+
+    <Section class="evaluering">
+        <h1>Evaluering</h1>
+
+        <div class="evaluering_grid">
+            <div>
+                <p>Stejl læringskurve. Havde erfaring med Illustrator på forhånd og det prisede jeg mig lykkelig over. Klarede den med nød og næppe på faldrebet, men der er helt klart ting i min process jeg ville gøre anderledes en anden gang. Eks. mere dybdegående forarbejde samt mere minimalistisk design. </p>
+            </div>
+            <div>
+                <p>Antal stjerner:</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+                    <path d="M19.5 0L23.878 13.4742H38.0456L26.5838 21.8017L30.9618 35.2758L19.5 26.9483L8.03819 35.2758L12.4162 21.8017L0.954397 13.4742H15.122L19.5 0Z" fill="#C1AB6A"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+                        <path d="M19.5 0L23.878 13.4742H38.0456L26.5838 21.8017L30.9618 35.2758L19.5 26.9483L8.03819 35.2758L12.4162 21.8017L0.954397 13.4742H15.122L19.5 0Z" fill="#C1AB6A"/>
+                        </svg>
+            </div>
+        </div>
+    </Section>
+
+
+</main>
+
+
+<footer>
+    <div class="sociale_links">
+        <a href=""><img src="img/mail_icon.svg" alt=""></a>
+     <a href="https://www.instagram.com/mylaub/"><img src="img/instagram_icon.svg" alt=""></a>
+        <a href="https://dk.linkedin.com/in/my-laub-b43994232"><img src="img/linkenin_icon.svg" alt=""></a>
+        
+    </div>
+    <p>Copyright My Laub</p>
+    
+</footer>
+    
+
+<script>
+    document.getElementById('popupMenu').style.display = 'none';
+  
+  document.getElementById('burgerMenu').onclick = function() {
+      var popupMenu = document.getElementById('popupMenu');
+      
+      // Toggle the menu visibility on burger click
+      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
+          popupMenu.style.display = 'flex'; // Show the menu
+      } else {
+          popupMenu.style.display = 'none'; // Hide the menu
+      }
+  };
+  
+  // Close the popup menu when the close button is clicked
+  document.querySelector('.close-btn').onclick = function() {
+      document.getElementById('popupMenu').style.display = 'none';
+  };
+  
+  // Optional: Close the menu if clicked outside
+  window.onclick = function(event) {
+      var popupMenu = document.getElementById('popupMenu');
+      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
+          if (popupMenu.style.display === 'flex') {
+              popupMenu.style.display = 'none'; // Close the menu if open
+          }
+      }
+  };
+  </script>
+</body>
+</html>
