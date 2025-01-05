@@ -407,6 +407,7 @@ footer p {
   font-size: 2rem;
   color: var(--blaa);
   text-align: center;
+  padding-top: 20px;
 }
 
 .evaluering p {
@@ -418,3 +419,51 @@ footer p {
 }
 
 /* ***************   INTROUGE   ***************** */
+
+/* ***************   GRUNDLÆGGENDE WEB   ***************** */
+
+.hero_tema h1 {
+  word-wrap: break-word;
+}
+
+.process img {
+  padding-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.figma_design img {
+  width: 100%;
+  height: auto;
+}
+
+.knap_tema {
+  padding-top: 20px;
+  display: inline-block;
+  font-family: "tan-pearl", sans-serif;
+  font-size: 0.7rem;
+  color: var(--blaa);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid var(--roed);
+  background-color: var(--hvid);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.figma_design {
+  text-align: center;
+}
+.figma_design h2 {
+  padding-bottom: 20px;
+}
+
+.figma_design p {
+  padding-bottom: 20px;
+}
+/* ***************   GRUNDLÆGGENDE WEB   ***************** */
+
+/* ***************   GRUNDLÆGGENDE UX / UI   ***************** */
+
+/* ***************   GRUNDLÆGGENDE UX / UI   ***************** */
