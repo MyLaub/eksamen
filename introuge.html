@@ -14,11 +14,14 @@
 
         <div id="popupMenu" class="popup-menu">
             <button class="close-btn">&times;</button>
-            <a href="">Forside</a>
-            <a href="index.html">Indhold</a>
-            <a href="#">Om mig</a>
-            <a href="aktivitetskalender.html">Kontakt</a>
-         
+            <a href="#">Forside</a>
+            <a href="Ommig.html">Om mig</a>
+            <a href="introuge.html">T01</a>
+            <a href="grundlaeggende_web.html">T02</a>
+            <a href="grunlaeggende_ux_ui.html">T03</a>
+            <a href="anitmation.html">T04</a>
+            <a href="virksomhedssite.html">T05</a>
+            <a href="portfolio.html">T06</a>
         </div>
 </header>
 
@@ -37,28 +40,25 @@
     </section>
 
     <section class="process">
-        <div class="praesentationskort">
-            <div>
+
+        
+            <div class="left_grid">
                 <h2>Præsentationskort</h2>
                 <p>Første opgave på semesteret var at lave en kort præsentation af mig selv. Jeg valgte at gå med nogle mørke farver samt stor letter-spacing. Blev hurtigt klogere.</p>
             </div>
-            <div>
+            <div class="left_grid_img">
                 <img src="img/præsentationskort.webp" alt="Præsentationskort">
             </div>
-        </div>
 
-        <div class="introvideo">
-            <div class="video_700px">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/so0isi7JbRQ?si=U3c3APH5D79uQ8Md" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="video_tekst">
+        
+            <div class="right_grid">
                 <h2>Introvideo</h2>
                 <p>I introvideoen skulle vi tage udgangspunkt i en eksisterende introsang.. Vi valgte Sex & The City og udførte konceptet på Nørrebro hvor vi hver anbefalede et sted/butik/café. Vi hjalp hinanden med at filme og klippe. Et par af drengene lavede selv titelsangen.</p>
             </div>
-            <div class="video_mobil">
+            <div class="right_grid_img">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/so0isi7JbRQ?si=U3c3APH5D79uQ8Md" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </div>
+    
     </section>
 
     <Section class="evaluering">
@@ -99,34 +99,6 @@
 </footer>
     
 
-<script>
-    document.getElementById('popupMenu').style.display = 'none';
-  
-  document.getElementById('burgerMenu').onclick = function() {
-      var popupMenu = document.getElementById('popupMenu');
-      
-      // Toggle the menu visibility on burger click
-      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
-          popupMenu.style.display = 'flex'; // Show the menu
-      } else {
-          popupMenu.style.display = 'none'; // Hide the menu
-      }
-  };
-  
-  // Close the popup menu when the close button is clicked
-  document.querySelector('.close-btn').onclick = function() {
-      document.getElementById('popupMenu').style.display = 'none';
-  };
-  
-  // Optional: Close the menu if clicked outside
-  window.onclick = function(event) {
-      var popupMenu = document.getElementById('popupMenu');
-      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
-          if (popupMenu.style.display === 'flex') {
-              popupMenu.style.display = 'none'; // Close the menu if open
-          }
-      }
-  };
-  </script>
+<script src="java.js"></script>
 </body>
 </html>

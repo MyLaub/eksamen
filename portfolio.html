@@ -14,11 +14,14 @@
 
         <div id="popupMenu" class="popup-menu">
             <button class="close-btn">&times;</button>
-            <a href="index.html">Forside</a>
-            <a href="">Indhold</a>
+            <a href="#">Forside</a>
             <a href="Ommig.html">Om mig</a>
-            <a href="aktivitetskalender.html">Kontakt</a>
-         
+            <a href="introuge.html">T01</a>
+            <a href="grundlaeggende_web.html">T02</a>
+            <a href="grunlaeggende_ux_ui.html">T03</a>
+            <a href="anitmation.html">T04</a>
+            <a href="virksomhedssite.html">T05</a>
+            <a href="portfolio.html">T06</a>
         </div>
 </header>
 
@@ -36,28 +39,26 @@
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa et! Reprehenderit laboriosam commodi unde fuga suscipit qui. Doloremque sit harum numquam accusantium impedit et eveniet earum ullam architecto totam.</h2>
     </section>
     <section class="process">
-        <div>
-            <div>
+            <div class="left_grid">
                 <h2>Inspiration</h2>
                 <p>Jeg startede ud med at lede efter inspiration til mit portfolio. Jeg fandt hurtigt ud af at jeg ønskede noget simpelt og rent, men med hints af farver hist og her. Derfefter lavede jeg moodboards og styletile</p>
             </div>
-            <div>
+            <div class="inspiration_img">
                 <img src="img/portfolio_mood.webp" alt="moodboard">
                 <img src="img/portfolio_mood2.webp" alt="moodboard">
                 <img src="img/portfolio_farver.webp" alt="farveinspiration">
             </div>
-        </div>
 
-        <div>
-            <div>
+
+        
+            <div class="left_grid">
                 <h2>Prototype</h2>
                 <p>Herefter gik jeg i gang med en prototype. Jeg havde en ret klar vision i hovedet om opsætningen og sprang derfor wireframes over. Derefter adspurgte jeg et hold af 4 studiekammerater om feedback og tilpassede siden endnu en gang.</p>
             </div>
-            <div>
+            <div class="left_grid_img2">
                 <img src="img/portfolio_styletile.webp" alt="sitemap">
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/F2FwEH3nDVPii0R4Hm4rRh/Portfolio-wireframe?node-id=0-1&embed-host=share" allowfullscreen></iframe>
             </div>
-        </div>
         </div>
 
     </section>
@@ -107,34 +108,6 @@
 </footer>
     
 
-<script>
-    document.getElementById('popupMenu').style.display = 'none';
-  
-  document.getElementById('burgerMenu').onclick = function() {
-      var popupMenu = document.getElementById('popupMenu');
-      
-      // Toggle the menu visibility on burger click
-      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
-          popupMenu.style.display = 'flex'; // Show the menu
-      } else {
-          popupMenu.style.display = 'none'; // Hide the menu
-      }
-  };
-  
-  // Close the popup menu when the close button is clicked
-  document.querySelector('.close-btn').onclick = function() {
-      document.getElementById('popupMenu').style.display = 'none';
-  };
-  
-  // Optional: Close the menu if clicked outside
-  window.onclick = function(event) {
-      var popupMenu = document.getElementById('popupMenu');
-      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
-          if (popupMenu.style.display === 'flex') {
-              popupMenu.style.display = 'none'; // Close the menu if open
-          }
-      }
-  };
-  </script>
+<script src="java.js"></script>
 </body>
 </html>

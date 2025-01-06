@@ -14,10 +14,15 @@
 
         <div id="popupMenu" class="popup-menu">
             <button class="close-btn">&times;</button>
-            <a href="">Forside</a>
-            <a href="index.html">Indhold</a>
-            <a href="#">Om mig</a>
-            <a href="aktivitetskalender.html">Kontakt</a>
+            <a href="#">Forside</a>
+            <a href="Ommig.html">Om mig</a>
+            <a href="introuge.html">T01</a>
+            <a href="grundlaeggende_web.html">T02</a>
+            <a href="grunlaeggende_ux_ui.html">T03</a>
+            <a href="anitmation.html">T04</a>
+            <a href="virksomhedssite.html">T05</a>
+            <a href="portfolio.html">T06</a>
+            
          
         </div>
 </header>
@@ -37,29 +42,27 @@
     </section>
     <section class="process">
         <div class="process_grid">
-        <div class="mobilsite">
-            <div>
+            <div class="left_grid">
                 <h2>Mobilsite</h2>
                 <p>Byggede et mobilsite med 5 sider. Brug af to forskellige fonter og farver. Margin og padding. Sitet opfyldte de specifikke frav og wireframes der var vedlagt.</p>
                 <a href="https://mylaub.dk/t02/mobilsite/index.html" class="knap_tema">Se side</a>
             </div>
-            <div>
+            <div class="left_grid_img">
                 <img src="img/mobilsite_mincomputer.webp" alt="Mobilsite">
             </div>
            
-        </div>
 
-        <div class="website_mincomputer">
-            <div>
+        
+            <div class="right_grid">
                 <h2>Website</h2>
                 <p>Studiestartsprøve. Deskopversionen af mobilsitet, benytte media queries, grids og lavede mit første galleri. Klare forbedringer på CSS:. </p>
                 <a href="https://mylaub.dk/t02/website/index.html" class="knap_tema">Se side</a>
             </div>
-            <div>
+            <div class="right_grid_img">
                 <img src="img/website_mincomputer.webp" alt="Website">
             </div>
         
-        </div>
+        
     </div>
     </section>
 
@@ -84,20 +87,22 @@
 
     <section class="figmadesign2">
         <h2>Figma & design</h2>
-
-        <div class="designgitter">
-            <div>
+       
+            <div class="left_grid">
                 <p>Lærte meget mere om design og stilanalyser. Herunder, nærhed, åbent/lukkethed, kontinuitet, repetition, visuelle heirakier, sitlarter og tider, farver og signaler. Lærte Figma bedre at kende.</p>
+            </div>
+            <div class="left_grid_img2">
                 <img src="img/lingscars.webp" alt="Lings cars">
                 <img src="img/lingscars2.webp" alt="Lings cars">
             </div>
-            <div>
+            <div class="left_grid">
                 <p>Lavede mit første styletile. og “wireframe”. Siden skulle være inspireret af et udvalg af hjemmesider Brian havde fundet. Jeg var tiltrukket af de mange farver og former.</p>
+            </div>
+            <div class="left_grid_img2">
                 <img src="img/figma_foto1.webp" alt="Figma eksempel">
                 <img src="img/figma_foto2.webp" alt="Figma eksempel">
             </div>
             
-        </div>
 
     </section>
 
@@ -142,34 +147,6 @@
 </footer>
     
 
-<script>
-    document.getElementById('popupMenu').style.display = 'none';
-  
-  document.getElementById('burgerMenu').onclick = function() {
-      var popupMenu = document.getElementById('popupMenu');
-      
-      // Toggle the menu visibility on burger click
-      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
-          popupMenu.style.display = 'flex'; // Show the menu
-      } else {
-          popupMenu.style.display = 'none'; // Hide the menu
-      }
-  };
-  
-  // Close the popup menu when the close button is clicked
-  document.querySelector('.close-btn').onclick = function() {
-      document.getElementById('popupMenu').style.display = 'none';
-  };
-  
-  // Optional: Close the menu if clicked outside
-  window.onclick = function(event) {
-      var popupMenu = document.getElementById('popupMenu');
-      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
-          if (popupMenu.style.display === 'flex') {
-              popupMenu.style.display = 'none'; // Close the menu if open
-          }
-      }
-  };
-  </script>
+<script src="java.js"></script>
 </body>
 </html>

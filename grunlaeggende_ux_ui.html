@@ -14,11 +14,14 @@
 
         <div id="popupMenu" class="popup-menu">
             <button class="close-btn">&times;</button>
-            <a href="">Forside</a>
-            <a href="index.html">Indhold</a>
-            <a href="#">Om mig</a>
-            <a href="aktivitetskalender.html">Kontakt</a>
-         
+            <a href="#">Forside</a>
+            <a href="Ommig.html">Om mig</a>
+            <a href="introuge.html">T01</a>
+            <a href="grundlaeggende_web.html">T02</a>
+            <a href="grunlaeggende_ux_ui.html">T03</a>
+            <a href="anitmation.html">T04</a>
+            <a href="virksomhedssite.html">T05</a>
+            <a href="portfolio.html">T06</a>
         </div>
 </header>
 
@@ -36,53 +39,50 @@
         <h2>Emnesite, research og idé, prototype, interviews, moodboards, tests, præsentation og dokumentation.</h2>
     </section>
     <section class="process">
-        <div>
-            <div>
+    
+            <div class="left_grid">
                 <h2>Brainstorm</h2>
                 <p>Jeg staratede forløbet med et meget ydmygt figjam board. Derfra valgte jeg at gå videre med en idé, jeg havde spekuleret over længe. </p>
             </div>
-            <div>
+            <div class="left_grid_img">
                 <img src="img/figjam_emnesite.webp" alt="FigJam">
             </div>
-        </div>
 
-        <div>
-            <div>
+        
+            <div class="right_grid">
                 <h2>Fler' som mig</h2>
                 <p>Jeg valgte projekt “Fler’ som mig”, Der skulle være et website der samler alle ydelser og aktivitetstilbud for folk med alle typer handicap. En online kalender hvor man hurtigt og nemt kan hakke sine kriterier af og nemt finde fællesskaber for ligsindede. </p>
             </div>
-            <div>
+            <div class="right_grid_img">
                <img src="img/aktivitetskalender.webp" alt="aktivitetskalender">
             </div>
-        </div>
+        
 
-        <div>
-            <div>
+        
+            <div class="left_grid">
                 <h2>Research</h2>
                 <p>Jeg havde på forhånd undersøgt emnet grundigt, da det som sagt var en idé jeg kom på for længe siden. I samtale med aktivitetsmedarbejdere, sygeplejeskere og psykiatere kom jeg frem til, at der er et hav af tilbud men opmærksomheden er meget lille. Det er svært at tiltrække de unge, da deres marketing er ringe og det oftest bare er små flyere der er hængt op i ambulatorier. 
 
                     Igennem mine jobs som frivillig på Bispebjerg hospital og i pigeklubben Mjølnerparken fik jeg nyttige udtalelser fra de unge og deres behov.Derudover endevendte jeg alle frivilliginstansers hjemmesider for aktiviteter og klubber. Tilbuddende var mange, men måtte konkludere at intet så særlig “tjekket ud”, som var det de unge jeg havde adspurgt, efterlyste.</p>
             </div>
-            <div>
+            <div class="inspiration_img">
                <img src="img/flersommig_research.webp" alt="research">
                <img src="img/flersommig_research2.webp" alt="research">
                <img src="img/flersommig_mood.webp" alt="moodboard">
             </div>
-        </div>
+        
 
-        <div>
-            <div>
+        
+            <div class="right_grid">
                 <h2>Wireframes</h2>
                 <p>Fik massere af feedback på mit første udkast til wireframe. Bla. overskuelighed og at sitet måske var for stringent. Jeg tog disse kommentarer med mig videre.Til slut havnede jeg på vedhæftede wireframe. Jeg ønskede et statement piece i herosektionen der kunne være ´genkendelig. Jeg valgte at tegne solskikkeblomsten (kendt fra solsikkesnoren - til folk med usynlige og synlige handicaps) og derefter 3D animerede jeg den i Adobe Dimension.Målet var at tage noget eksisterende og gøre det mere ungt, smart og relevant.Derudover valgte jeg at gå med et minimalistisk gitter, der er nemt at navigere i.</p>
+                <a href="https://mylaub.dk/t03/index.html" class="knap_tema">Se side</a>
             </div>
-            <div>
+            <div class="right_grid_img2">
                 <img src="img/flersommig_wireframe.webp" alt="wireframe">
                 <img src="img/flersommig_wireframe_finale.webp" alt="wireframe">
             </div>
-        </div>
-        <div>
-            <a href="https://mylaub.dk/t03/index.html" class="knap_tema">Se side</a>
-        </div>
+    
     </section>
 
     <Section class="evaluering">
@@ -129,34 +129,6 @@
 </footer>
     
 
-<script>
-    document.getElementById('popupMenu').style.display = 'none';
-  
-  document.getElementById('burgerMenu').onclick = function() {
-      var popupMenu = document.getElementById('popupMenu');
-      
-      // Toggle the menu visibility on burger click
-      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
-          popupMenu.style.display = 'flex'; // Show the menu
-      } else {
-          popupMenu.style.display = 'none'; // Hide the menu
-      }
-  };
-  
-  // Close the popup menu when the close button is clicked
-  document.querySelector('.close-btn').onclick = function() {
-      document.getElementById('popupMenu').style.display = 'none';
-  };
-  
-  // Optional: Close the menu if clicked outside
-  window.onclick = function(event) {
-      var popupMenu = document.getElementById('popupMenu');
-      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
-          if (popupMenu.style.display === 'flex') {
-              popupMenu.style.display = 'none'; // Close the menu if open
-          }
-      }
-  };
-  </script>
+<script src="java.js"></script>
 </body>
 </html>

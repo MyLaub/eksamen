@@ -14,12 +14,14 @@
 
         <div id="popupMenu" class="popup-menu">
             <button class="close-btn">&times;</button>
-            <a href="index.html">Forside</a>
-            <a href="">Indhold</a>
+            <a href="#">Forside</a>
             <a href="Ommig.html">Om mig</a>
-            <a href="aktivitetskalender.html">Kontakt</a>
-         
-        </div>
+            <a href="introuge.html">T01</a>
+            <a href="grundlaeggende_web.html">T02</a>
+            <a href="grunlaeggende_ux_ui.html">T03</a>
+            <a href="anitmation.html">T04</a>
+            <a href="virksomhedssite.html">T05</a>
+            <a href="portfolio.html">T06</a>
 </header>
 
 <main>
@@ -36,57 +38,53 @@
         <h2>Teamsamarbejde, Trello, tests, PremierePro, B-rolls, colorgrading, After Effects, Lottiefiles, Git, Scrum, Pecha Kucha & evaluering. </h2>
     </section>
     <section class="process">
-        <div>
-            <div>
+       
+        
+            <div class="left_grid">
                 <h2>Passionsvideo</h2>
                 <p>I min passionsvideo arbejdede jeg alene. Jeg valgte at filme Jacob, som har en passion for surdej. Efter en vellykket skydedag så jeg en masse LinkedIn learning og kastede mig derefter over Premiere Pro.</p>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OHIX_oQ350w?si=NxGO3isBHFehiLXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div>
                 <a href="link til passionssite SKAL RETTES!!!!!" class="knap_tema">Passionssite</a>
             </div>
-        </div>
+            <div class="left_grid_img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OHIX_oQ350w?si=NxGO3isBHFehiLXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        
 
-        <div>
-            <div>
+       
+            <div class="right_grid">
                 <h2>Virksomhedssite</h2>
                 <p>Vi fik en aftale i hus med Zeymer.dk. En fin lille krystalbutik i Roskilde. Vi startede med at lave en kompelt analyse af det eksisterende site ved brug af: sitemap, wireframes, styletile, og indholdsoversigt.  </p>
             </div>
-            <div>
+            <div class="right_grid_img2">
                 <img src="img/zeymer_sitemap.webp" alt="sitemap">
                 <img src="img/zeymer_styletile_old.webp" alt="">
             </div>
-        </div>
+        
 
-        <div>
-            <div>
+       
+            <div class="left_grid">
                 <h2>Tests</h2>
                 <p>Vi benyttede os af fem-sekunderstest til analyse af eksisterende site, samt det fornyede site. Testen viste klare problemer med navigation, hvilket vi fik forbedret markant.Derudover lavede vi også likerttest, hvor vi benyttede os af, at Zeymer.dk har et Facebook community vi kunne adspørge om deres købevaner samt deres tilknytning til butikken.</p>
             </div>
-            
-            <div>
-                <div>
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/cHWxSFenvvE33s3bdjHu26/Sitemap?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+            <div class="left_grid_img2">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/cHWxSFenvvE33s3bdjHu26/Sitemap?node-id=0-1&embed-host=share" allowfullscreen></iframe>
                     <img src="img/zeymer_likert.webp" alt="Mit spil">
-                </div>
             </div>
+           
+        
 
-            <div>
-                <div>
+           
+                <div class="right_grid">
                     <h2>Syletile & prototype</h2>
                     <p>På baggrund af moodboards fik vi udviklet et samlet styletile. Det bedstod af farver, der alle var hentet i natursten og 3 forskellige fonter. Derudover blev vi enige om at vi skulle have håndskrevne sætninger og tegninger på sitet for at understrege den varme stemning. Derefter hoppede vi videre til wireframes og prototype (som vi også lavede tests af). </p>
+                        <a href="https://mylaub.dk/t05/sitet-1/index.html" class="knap_tema">Zeymer.dk</a>
                 </div>
-                <div>
+                <div class="right_grid_img2">
                     <img src="img/zeymer_styletile.webp" alt="styletile">
                     <img src="img/zeymer_prototype.webp" alt="prototype">
                 </div>
-                <div>
-                    <a href="https://mylaub.dk/t05/sitet-1/index.html" class="knap_tema">Zeymer.dk</a>
-                </div>
-            </div>
-        </div>
+            
+        
 
     </section>
 
@@ -131,34 +129,6 @@
 </footer>
     
 
-<script>
-    document.getElementById('popupMenu').style.display = 'none';
-  
-  document.getElementById('burgerMenu').onclick = function() {
-      var popupMenu = document.getElementById('popupMenu');
-      
-      // Toggle the menu visibility on burger click
-      if (popupMenu.style.display === 'none' || popupMenu.style.display === '') {
-          popupMenu.style.display = 'flex'; // Show the menu
-      } else {
-          popupMenu.style.display = 'none'; // Hide the menu
-      }
-  };
-  
-  // Close the popup menu when the close button is clicked
-  document.querySelector('.close-btn').onclick = function() {
-      document.getElementById('popupMenu').style.display = 'none';
-  };
-  
-  // Optional: Close the menu if clicked outside
-  window.onclick = function(event) {
-      var popupMenu = document.getElementById('popupMenu');
-      if (!event.target.matches('#burgerMenu') && !event.target.closest('.popup-menu')) {
-          if (popupMenu.style.display === 'flex') {
-              popupMenu.style.display = 'none'; // Close the menu if open
-          }
-      }
-  };
-  </script>
+<script src="java.js"></script>
 </body>
 </html>
