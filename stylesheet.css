@@ -11,6 +11,7 @@ html {
   --copper: #c27e35;
   --roed: #76290b;
   --groen: #1e3226;
+  --lysgroen: #4f4f2a;
 }
 
 @font-face {
@@ -36,6 +37,7 @@ header {
   display: flex;
   justify-content: space-around;
   position: fixed;
+  z-index: 10;
   padding: 4% 0%;
   gap: 100px;
   width: 100%;
@@ -134,7 +136,7 @@ section {
   font-family: "tan-pearl";
   font-size: 3rem;
   text-align: right;
-  color: var(--groen);
+  color: var(--lysgroen);
 }
 
 p {
@@ -173,27 +175,37 @@ h3 {
   font-size: 4rem;
   margin-bottom: 0.5rem;
 }
+
+.tal-item h1 a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
 .tal-item p {
   font-family: "Genera", sans-serif;
   color: black;
 }
 
-.tal-item:nth-child(1) h1 {
+.tal-item h1 a:hover {
+  color: black;
+}
+
+.tal-item:nth-child(1) h1 a {
   color: var(--groen);
 }
-.tal-item:nth-child(2) h1 {
+.tal-item:nth-child(2) h1 a {
   color: var(--gul);
 }
-.tal-item:nth-child(3) h1 {
+.tal-item:nth-child(3) h1 a {
   color: var(--roed);
 }
-.tal-item:nth-child(4) h1 {
+.tal-item:nth-child(4) h1 a {
   color: var(--copper);
 }
-.tal-item:nth-child(5) h1 {
+.tal-item:nth-child(5) h1 a {
   color: var(--blaa);
 }
-.tal-item:nth-child(6) h1 {
+.tal-item:nth-child(6) h1 a {
   color: var(--groen);
 }
 
@@ -205,7 +217,7 @@ h3 {
   text-align: center;
   margin-top: 50px;
 }
-.portraet {
+.om_mig_grid {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -213,7 +225,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.portraet img {
+.om_mig_grid img {
   width: 100%;
 }
 
@@ -267,9 +279,67 @@ footer p {
 
 /* ******************************** */
 /* ***************   OM MIG   ***************** */
+
+/* .intro h1 {
+    position: absolute;
+    font-size: 5rem;
+    top: 17%;
+    left: 27%;
+    z-index: 2;
+  }
+
+  .info_billede {
+    position: relative;
+  }
+  .info_billede img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  } */
+
 .intro {
+  position: relative;
+  text-align: center;
   padding-top: 88px;
 }
+
+.intro h1 {
+  font-family: "tan-pearl";
+  font-size: 2.7rem;
+  text-align: center;
+  color: var(--roed);
+  position: absolute;
+  top: 34%;
+  left: 3%;
+  z-index: 2;
+}
+
+.info_billede {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.info_hoejre {
+  text-align: right;
+  font-size: 0.7rem;
+  padding-top: 60px;
+}
+.info_venstre {
+  text-align: left;
+  font-size: 0.7rem;
+  padding-top: 60px;
+}
+
+.info_billede img {
+  width: 100%;
+  margin-top: -20px;
+  display: block;
+  height: auto;
+  padding-top: 50px;
+}
+
+/* }
 .intro h1 {
   font-family: "tan-pearl";
   font-size: 2.7rem;
@@ -293,7 +363,7 @@ footer p {
 .info_billede img {
   width: 100%;
   margin-top: -20px;
-}
+} */
 
 .erfaring {
   /* padding: 20px; */
@@ -344,7 +414,7 @@ footer p {
 .hero_tema h1 {
   font-family: "tan-pearl";
   font-size: 2.3rem;
-  color: var(--groen);
+  color: var(--lysgroen);
   padding-bottom: 20px;
 }
 
@@ -391,6 +461,10 @@ footer p {
 .process iframe {
   width: 100%;
   height: auto;
+}
+
+.video_700px {
+  display: none;
 }
 
 .evaluering_grid {
@@ -453,15 +527,22 @@ footer p {
   margin-bottom: 20px;
 }
 
-.figma_design {
+.mincomputer_700px {
+  display: none;
+}
+
+.figmadesign2 {
   text-align: center;
 }
-.figma_design h2 {
+.figmadesign2 h2 {
   padding-bottom: 20px;
 }
 
-.figma_design p {
+.figmadesign2 p {
   padding-bottom: 20px;
+}
+.figmadesign2 img {
+  width: 100%;
 }
 /* ***************   GRUNDLÆGGENDE WEB   ***************** */
 
@@ -480,3 +561,268 @@ footer p {
 /* ***************   PORTFOLIO   ***************** */
 
 /* ***************   PORTFOLIO   ***************** */
+
+/* ***************   MEDIA  ***************** */
+@media (min-width: 700px) {
+  header h1 {
+    font-family: "genera";
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 2% 0%;
+    padding-left: 20px;
+    gap: 100px;
+    width: 100%;
+    background: var(--hvid);
+    /* z-index: 2; */
+    border-bottom: 1px solid black;
+  }
+  header img {
+    align-items: right;
+  }
+
+  .burger_menu {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 0px;
+    padding-right: 50px;
+  }
+  .popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--hvid);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 1px solid black;
+  }
+
+  /* ***************   FORSIDE   ***************** */
+
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .indhold {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .indhold h2 {
+    text-align: left;
+  }
+  .indhold p {
+    text-align: right;
+  }
+
+  .tal-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .tal-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    gap: 1rem;
+  }
+
+  .tal-item h1 {
+    font-size: 5rem;
+  }
+
+  .tal-item p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .om_mig_grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+    justify-content: top;
+  }
+
+  .om_mig_foto {
+    grid-column: 2;
+  }
+
+  .om_mig_text {
+    grid-column: 1;
+  }
+
+  /* ***************   FORSIDE   ***************** */
+
+  /* ***************   OM MIG   ***************** */
+
+  .intro {
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  .intro h1 {
+    position: absolute;
+    font-size: 5rem;
+    top: 17%;
+    left: 27%;
+    z-index: 2;
+  }
+
+  .info_billede {
+    position: relative;
+  }
+  .info_billede img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .info_hoejre {
+    font-size: 1rem;
+  }
+
+  .info_venstre {
+    font-size: 1rem;
+  }
+
+  .aarstal p {
+    font-size: 1rem;
+  }
+
+  .frivillig_uddannelse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 230px;
+    padding: 76px 0;
+  }
+
+  /* ***************   OM MIG   ***************** */
+
+  /* ***************   INTROUGE   ***************** */
+  .hero_tema {
+    padding-top: 105px;
+  }
+
+  .hero_tema h1 {
+    font-size: 5rem;
+    text-align: left;
+    grid-column: 1; /* Placeres i første kolonne */
+  }
+
+  .hero_tema p {
+    text-align: right;
+    margin: 0; /* Fjern ekstra margin */
+    padding-left: 250px;
+  }
+
+  .buzzwords {
+    padding-top: 63px;
+  }
+  .process {
+    padding-top: 30px;
+  }
+  .praesentationskort {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .introvideo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .video_mobil {
+    display: none;
+  }
+  .video_700px {
+    display: block;
+  }
+
+  .introvideo iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    grid-column: 1;
+  }
+
+  .evaluering h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .evaluering_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+    gap: 60px;
+  }
+
+  /* ***************   INTROUGE   ***************** */
+
+  /* ***************   GRUNDLÆGGENDE WEB  ***************** */
+
+  .mobilsite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .website_mincomputer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 40px;
+    align-items: start;
+  }
+  .knap_tema {
+    justify-items: center;
+  }
+
+  .figmadesign2 h2 {
+    text-align: left;
+  }
+  .figmadesign2 p {
+    text-align: left;
+  }
+
+  .designgitter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .figmadesign2 img {
+    width: 70%;
+    justify-content: center;
+  }
+  .figmadesign2 p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  /* ***************   GRUNDLÆGGENDE WEB  ***************** */
+}
+
+/* ***************   MEDIA  ***************** */
