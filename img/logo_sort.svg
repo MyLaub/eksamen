@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: AugustScriptBoldfree, 'August Script Bold free';
+        font-size: 44.08px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        font-family: Genera-AltLight, Genera;
+        font-size: 41.92px;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(-3.3 47.8)"><tspan x="0" y="0">Portfolio</tspan></text>
+  <text class="cls-1" transform="translate(58.41 75.79)"><tspan x="0" y="0">My Laub</tspan></text>
+</svg>
